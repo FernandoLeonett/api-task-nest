@@ -27,6 +27,6 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe())
   // await generateSwagger(app); // llamada a la función generateSwagger
   app.setGlobalPrefix('api');
-  await app.listen(3000);
+  await app.listen(3000, ()=>console.log("servidor trabajando"));
 }
 bootstrap();
